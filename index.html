@@ -11,10 +11,10 @@
     <button onclick="shortenUrl()">Shorten</button> -->
 
 
-    
-    <input id='url' type="text">
-    <button id='submit' onclick="get_unique_id()">shorten url</button>
-    <div id='shortUrl'><a href='#'></div>
+    <form method="post" action='/shorturl'>
+    <input id='url' type="text" name='url'>
+    <button id='submit' >shorten url</button>
+    </form>
     
     <script src='/static/script.js'></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
